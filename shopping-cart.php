@@ -4,10 +4,9 @@ error_reporting(E_STRICT); // throw those notices
 
 session_start(); // session starts
 
-// index.php - A basic shopping cart with add to cart, and remove links
+// shopping-cart.php - A basic shopping cart with add to cart, and remove links
 
 // Products array
-// ######## please do not alter the following code ########
 $products = array(
         array("name" => "Richard", "price" => 119.75),
         array("name" => "Peter", "price" => 160.50),
@@ -15,7 +14,6 @@ $products = array(
         array("name" => "James", "price" => 19.9),
         array("name" => "Mike", "price" => 15.45)
         );
-// ##################################################
 
 // Reset values
 if (!isset($_SESSION["total"])) {
